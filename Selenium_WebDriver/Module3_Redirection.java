@@ -1,4 +1,3 @@
-
 package Module3_Navigation;
 
 import org.openqa.selenium.By;

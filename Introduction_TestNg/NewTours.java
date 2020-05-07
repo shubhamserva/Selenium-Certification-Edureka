@@ -27,8 +27,8 @@ public class NewTours {
 	public static void ScreenshotTest() throws IOException {
 
 		takeScreenshot();
-		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("mercury");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("mercury");
+		driver.findElement(By.xpath("//input[@name='userName']")).sendKeys("admin");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin");
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
 		takeScreenshot();
 
@@ -59,20 +59,20 @@ public class NewTours {
 		driver.findElement(By.xpath("//input[@name='reserveFlights']")).click();
 		takeScreenshot();
 
-		driver.findElement(By.xpath("//input[@name='passFirst0']")).sendKeys("Ramesh");
-		driver.findElement(By.xpath("//input[@name='passLast0']")).sendKeys("P");
+		driver.findElement(By.xpath("//input[@name='passFirst0']")).sendKeys("Baba");
+		driver.findElement(By.xpath("//input[@name='passLast0']")).sendKeys("Ram");
 		driver.findElement(By.xpath("//select[@name='pass.0.meal']")).getText().equals("Hindu");
 		driver.findElement(By.xpath("//select[@name='creditCard']")).getText().equals("Visa");
-		driver.findElement(By.xpath("//input[@name='creditnumber']")).sendKeys("4543 3434 34343 3323");
-		driver.findElement(By.xpath("//select[@name='cc_exp_dt_mn']")).getText().equals("09");
-		driver.findElement(By.xpath("//select[@name='cc_exp_dt_yr']")).getText().equals("2009");
-		driver.findElement(By.xpath("//input[@name='cc_frst_name']")).sendKeys("Shiva");
-		driver.findElement(By.xpath("//input[@name='cc_last_name']")).sendKeys("N");
-		driver.findElement(By.xpath("//input[@name='billAddress1']")).sendKeys("200 water street");
-		driver.findElement(By.xpath("//input[@name='billCity']")).sendKeys("New York");
-		driver.findElement(By.xpath("//input[@name='billState']")).sendKeys("New York State");
-		driver.findElement(By.xpath("//input[@name='billZip']")).sendKeys("34343");
-		driver.findElement(By.xpath("//tbody//tr[14]//td[2]//input[1]")).click();
+		driver.findElement(By.xpath("//input[@name='creditnumber']")).sendKeys("4543 1212 99999 0000");
+		driver.findElement(By.xpath("//select[@name='cc_exp_dt_mn']")).getText().equals("04");
+		driver.findElement(By.xpath("//select[@name='cc_exp_dt_yr']")).getText().equals("2020");
+		driver.findElement(By.xpath("//input[@name='cc_frst_name']")).sendKeys("Baba");
+		driver.findElement(By.xpath("//input[@name='cc_last_name']")).sendKeys("Singh ");
+		driver.findElement(By.xpath("//input[@name='billAddress1']")).sendKeys("441, 32nd St");
+		driver.findElement(By.xpath("//input[@name='billCity']")).sendKeys("Paris");
+		driver.findElement(By.xpath("//input[@name='billState']")).sendKeys("Paris deptt.");
+		driver.findElement(By.xpath("//input[@name='billZip']")).sendKeys("56432");
+		driver.findElement(By.xpath("//tbody//tr[14]//td[2]//input[1]")).click()
 		driver.findElement(By.xpath("//input[@name='buyFlights']")).click();
 		takeScreenshot();
 		
@@ -82,7 +82,7 @@ public class NewTours {
 	public static void takeScreenshot() throws IOException {
 		TakesScreenshot screenshot = ((TakesScreenshot) driver);
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
-		File destFile = new File("C://Users//Siva//Downloads//test.png");
+		File destFile = new File("C://Users//Shubham//Screenshots//test.png");
 		FileUtils.copyFile(srcFile, destFile);
 	}
 }
