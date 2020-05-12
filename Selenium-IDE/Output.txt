@@ -1,0 +1,86 @@
+1508068884727 geckodriver INFO geckodriver 0.19.0
+1508068884823 geckodriver INFO Listening on 127.0.0.1:3797
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+1508068886049 mozrunner::runner INFO Running command: “C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe” “-marionette” “-profile” “C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile.MudFuMXolzSs”
+1508068902341 addons.xpi WARN Error parsing extensions state: [Exception… “Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]”  nsresult: “0x80520012 (NS_ERROR_FILE_NOT_FOUND)”  location: “JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1596”  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1596 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1631 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3152 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2246 < callProvider()@resource://gre/modules/AddonManager.jsm:271 < _startProvider()@resource://gre/modules/AddonManager.jsm:741 < startup()@resource://gre/modules/AddonManager.jsm:908 < startup()@resource://gre/modules/AddonManager.jsm:3122 < observe()@jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1508068907197 Marionette INFO Enabled via –marionette
+[GPU 5872] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1508068926603 Marionette INFO Listening on port 62533
+1508068926717 Marionette INFO Listening on port 62533
+1508068927243 Marionette DEBUG loaded listener.js
+Oct 15, 2017 5:32:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1508068928496 Marionette DEBUG Received DOM event “beforeunload” for “about:blank”
+1508068933882 Marionette DEBUG Received DOM event “pagehide” for “about:blank”
+1508068933882 Marionette DEBUG Received DOM event “unload” for “about:blank”
+1508068934197 Marionette DEBUG Received DOM event “DOMContentLoaded” for “http://www.newtours.demoaut.com/&#8221;
+1508068936302 Marionette DEBUG Received DOM event “pageshow” for “http://www.newtours.demoaut.com/&#8221;
+1508068938296 Marionette DEBUG Received DOM event “beforeunload” for “http://www.newtours.demoaut.com/&#8221;
+1508068942206 Marionette DEBUG Received DOM event “pagehide” for “http://www.newtours.demoaut.com/&#8221;
+1508068942207 Marionette DEBUG Received DOM event “unload” for “http://www.newtours.demoaut.com/&#8221;
+1508068942664 Marionette DEBUG Received DOM event “DOMContentLoaded” for “http://newtours.demoaut.com/mercuryreservation.php?osCsid=f976b74a8f8fb81becd9d0fa684b5ad9&#8221;
+1508068943329 Marionette DEBUG Received DOM event “pageshow” for “http://newtours.demoaut.com/mercuryreservation.php?osCsid=f976b74a8f8fb81becd9d0fa684b5ad9&#8221;
+1508068943594 Marionette DEBUG Received DOM event “beforeunload” for “http://newtours.demoaut.com/mercuryreservation.php?osCsid=f976b74a8f8fb81becd9d0fa684b5ad9&#8221;
+1508068944678 Marionette DEBUG Received DOM event “pagehide” for “http://newtours.demoaut.com/mercuryreservation.php?osCsid=f976b74a8f8fb81becd9d0fa684b5ad9&#8221;
+1508068944680 Marionette DEBUG Received DOM event “unload” for “http://newtours.demoaut.com/mercuryreservation.php?osCsid=f976b74a8f8fb81becd9d0fa684b5ad9&#8221;
+1508068944846 Marionette DEBUG Received DOM event “DOMContentLoaded” for “http://newtours.demoaut.com/mercurysignon.php&#8221;
+1508068945281 Marionette DEBUG Received DOM event “pageshow” for “http://newtours.demoaut.com/mercurysignon.php&#8221;
+1508068945543 Marionette DEBUG Received DOM event “beforeunload” for “http://newtours.demoaut.com/mercurysignon.php&#8221;
+1508068946099 Marionette DEBUG Received DOM event “pagehide” for “http://newtours.demoaut.com/mercurysignon.php&#8221;
+1508068946101 Marionette DEBUG Received DOM event “unload” for “http://newtours.demoaut.com/mercurysignon.php&#8221;
+1508068946568 Marionette DEBUG Received DOM event “DOMContentLoaded” for “http://newtours.demoaut.com/mercurywelcome.php&#8221;
+1508068947930 Marionette DEBUG Received DOM event “pageshow” for “http://newtours.demoaut.com/mercurywelcome.php&#8221;
+1508068947977 Marionette INFO New connections will no longer be accepted
+Oct 15, 2017 5:32:40 PM org.openqa.selenium.os.UnixProcess destroy
+INFO: Unable to drain process streams. Ignoring but the exception being swallowed follows.
+org.apache.commons.exec.ExecuteException: The stop timeout of 2000 ms was exceeded (Exit value: -559038737)
+at org.apache.commons.exec.PumpStreamHandler.stopThread(PumpStreamHandler.java:295)
+at org.apache.commons.exec.PumpStreamHandler.stop(PumpStreamHandler.java:180)
+at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:137)
+at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:220)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:542)
+at module2seleniumide.Module2AssignV2.tearDown(Module2AssignV2.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+at org.testng.TestNG.runSuites(TestNG.java:1144)
+at org.testng.TestNG.run(TestNG.java:1115)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+
+PASSED: test333M2AssignV2
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
